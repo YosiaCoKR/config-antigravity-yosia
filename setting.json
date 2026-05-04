@@ -100,7 +100,7 @@
   "editor.quickSuggestions": {
     "other": "on",
     "comments": "off",
-    "strings": "on" 
+    "strings": "on"
   },
   "npm.fetchOnlinePackageInfo": true,
 
@@ -112,7 +112,7 @@
   "intelephense.environment.documentRoot": "public",
 
   // ============================================
-  // 🐍 PYTHON & ML BOOST (Fix Sugesti df.)
+  // 🐍 PYTHON & ML BOOST
   // ============================================
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "basic",
@@ -123,7 +123,7 @@
   "python.analysis.diagnosticMode": "workspace",
   "python.analysis.userFileIndexingLimit": 2000,
   "vsintellicode.python.completionsEnabled": true,
-  
+
   "jdk.jdkhome": "c:\\oracleJdk-25",
   "[java]": {
     "editor.defaultFormatter": "Oracle.oracle-java"
@@ -184,6 +184,29 @@
   "git.enableSmartCommit": true,
 
   // ============================================
+  // 🐍 AUTO CLOSE TAG
+  // ============================================
+  "auto-close-tag.activationOnLanguage": [
+    "xml",
+    "php",
+    "blade",
+    "ejs",
+    "jinja",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "plaintext",
+    "markdown",
+    "vue",
+    "liquid",
+    "erb",
+    "lang-cfml",
+    "cfml",
+    "HTML (Eex)"
+  ],
+
+  // ============================================
   // 🎯 CODING COMFORT & ANTI-PUSING
   // ============================================
   "editor.stickyScroll.enabled": true,
@@ -216,5 +239,6 @@
     "Windows PowerShell": {
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
     }
-  }
+  },
+  "explorer.confirmDelete": false
 }
