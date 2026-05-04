@@ -98,7 +98,9 @@
     "javascript": "javascriptreact"
   },
   "editor.quickSuggestions": {
-    "strings": "on" // Penting buat Tailwind biar autocomplete muncul di dalam class=""
+    "other": "on",
+    "comments": "off",
+    "strings": "on" 
   },
   "npm.fetchOnlinePackageInfo": true,
 
@@ -110,9 +112,18 @@
   "intelephense.environment.documentRoot": "public",
 
   // ============================================
-  // 🐍 PYTHON & ☕ JAVA
+  // 🐍 PYTHON & ML BOOST (Fix Sugesti df.)
   // ============================================
   "python.languageServer": "Pylance",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.autoImportCompletions": true,
+  "python.analysis.completeFunctionParens": true,
+  "python.analysis.indexing": true,
+  "python.analysis.packageIndexLimit": 5000,
+  "python.analysis.diagnosticMode": "workspace",
+  "python.analysis.userFileIndexingLimit": 2000,
+  "vsintellicode.python.completionsEnabled": true,
+  
   "jdk.jdkhome": "c:\\oracleJdk-25",
   "[java]": {
     "editor.defaultFormatter": "Oracle.oracle-java"
@@ -134,21 +145,17 @@
   // ============================================
   "workbench.sideBar.location": "right",
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas", // <-- Hapus 'Mono' di sini
+  "terminal.integrated.fontFamily": "'FiraCode Nerd Font', Consolas",
   "terminal.integrated.fontSize": 14,
   "terminal.integrated.cursorBlinking": true,
   "terminal.integrated.cursorStyle": "line",
   "terminal.integrated.gpuAcceleration": "on",
   "security.workspace.trust.untrustedFiles": "open",
-
-  // 🔥 Matikan Shell Integration agar Oh My Posh tidak rusak
   "terminal.integrated.shellIntegration.enabled": false,
 
   // ============================================
   // 🚀 PRODUCTIVITY & WORKFLOW
   // ============================================
-
-  // 1. File Nesting (Menyembunyikan file config di bawah file utama)
   "explorer.fileNesting.enabled": true,
   "explorer.fileNesting.expand": false,
   "explorer.fileNesting.patterns": {
@@ -162,10 +169,7 @@
     "composer.json": "composer.lock"
   },
 
-  // 2. Linked Editing (Ubah tag pembuka, tag penutup ikut berubah otomatis)
   "editor.linkedEditing": true,
-
-  // 3. Emmet Everywhere (Jalan mulus di React & Laravel Blade)
   "emmet.includeLanguages": {
     "javascript": "javascriptreact",
     "blade": "html"
@@ -182,23 +186,13 @@
   // ============================================
   // 🎯 CODING COMFORT & ANTI-PUSING
   // ============================================
-
-  // 1. Sticky Scroll (Mencegah tersesat di file panjang)
   "editor.stickyScroll.enabled": true,
-  "editor.stickyScroll.maxLineCount": 5, // Maksimal 5 baris yang nempel di atas biar nutupin layar
-
-  // 2. Word Wrap (Wajib buat Tailwind)
+  "editor.stickyScroll.maxLineCount": 5,
   "editor.wordWrap": "on",
-
-  // 3. Auto Rapi saat Copas
   "editor.formatOnPaste": true,
-
-  // 4. Bersihin & Urutin Import saat Save (Next.js / React)
   "editor.codeActionsOnSave": {
-    "source.organizeImports": "explicit" // Opsi 'explicit' adalah standar baru VS Code
+    "source.organizeImports": "explicit"
   },
-
-  // 5. Cegah kode bergeser tanpa sengaja
   "editor.dragAndDrop": false,
 
   "terminal.integrated.profiles.windows": {
