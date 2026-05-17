@@ -4,7 +4,6 @@
   // ============================================
   "workbench.colorTheme": "SynthWave84",
   "workbench.iconTheme": "material-icon-theme",
-  "glassit.alpha": 230,
   "workbench.colorCustomizations": {
     "[SynthWave84]": {
       "editor.lineHighlightBackground": "#2b004655",
@@ -223,10 +222,7 @@
       "path": "C:\\Users\\rosea\\AppData\\Local\\Microsoft\\WindowsApps\\Microsoft.PowerShell_8wekyb3d8bbwe\\pwsh.exe"
     },
     "Command Prompt": {
-      "path": [
-        "${env:windir}\\Sysnative\\cmd.exe",
-        "${env:windir}\\System32\\cmd.exe"
-      ],
+      "path": "C:\\WINDOWS\\System32\\cmd.exe",
       "args": [],
       "icon": {
         "id": "terminal-cmd"
@@ -240,5 +236,8 @@
       "path": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
     }
   },
-  "explorer.confirmDelete": false
+  "explorer.confirmDelete": false,
+  "[sql]": {
+    "editor.defaultFormatter": "cweijan.vscode-mysql-client2"
+  }
 }
